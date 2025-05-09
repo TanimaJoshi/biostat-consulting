@@ -11,7 +11,7 @@ export default function SchemaMarkup() {
       jobTitle: 'Biostatistics Consultant',
       description: 'Experienced biostatistician with over 20 years in clinical trials and regulatory submissions.',
       sameAs: [
-        'https://www.linkedin.com/in/milan-mangeshkar/',  // Update with actual LinkedIn URL
+        'https://www.linkedin.com/in/milan-mangeshkar-4a050ab/',
       ],
     },
     areaServed: 'Worldwide',
