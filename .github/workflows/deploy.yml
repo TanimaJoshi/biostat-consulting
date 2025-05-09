@@ -35,16 +35,9 @@ jobs:
 
       - name: Build
         run: |
-          echo "Starting build process..."
           npm run build
-          echo "Build completed. Checking output directory..."
-          ls -la out/
-          echo "Creating .nojekyll file..."
           touch out/.nojekyll
-          echo "Copying public files..."
           cp -r public/* out/ || true
-          echo "Final output directory contents:"
-          ls -la out/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
