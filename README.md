@@ -1,6 +1,12 @@
 # Biostatistics Consulting Website
 
-Professional website for Dr. Milan Mangeshkar, offering expert consulting services in clinical development, regulatory support, and biometrics operations.
+Dr. Milan Mangeshkar's professional biostatistics consulting website.
+
+Last deployed: [Current Timestamp]
+
+## About
+
+This is a Next.js website for biostatistics consulting services.
 
 ## Services
 - Clinical Development Strategy
