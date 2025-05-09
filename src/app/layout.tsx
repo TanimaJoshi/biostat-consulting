@@ -1,6 +1,7 @@
 import React from 'react'
 import type { Metadata } from 'next'
 import SchemaMarkup from './schema'
+import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Dr. Milan Mangeshkar - Biostatistics Consulting',
@@ -66,7 +67,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#ffffff" />
         <SchemaMarkup />
       </head>
-      <body>{children}</body>
+      <body className="bg-white">{children}</body>
     </html>
   )
 } 
