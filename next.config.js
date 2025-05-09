@@ -18,12 +18,14 @@ const path = require('path');
 
 const copyFileToOutput = (filename) => {
   try {
-    const content = fs.readFileSync(path.join(__dirname, filename), 'utf8');
-    if (!fs.existsSync(path.join(__dirname, 'out'))) {
-      fs.mkdirSync(path.join(__dirname, 'out'), { recursive: true });
+    const sourcePath = path.join(__dirname, 'public', filename);
+    const destPath = path.join(__dirname, 'out', filename);
+    
+    if (fs.existsSync(sourcePath)) {
+      const content = fs.readFileSync(sourcePath, 'utf8');
+      fs.writeFileSync(destPath, content);
+      console.log(`Successfully copied ${filename} to output directory`);
     }
-    fs.writeFileSync(path.join(__dirname, 'out', filename), content);
-    console.log(`Successfully copied ${filename} to output directory`);
   } catch (error) {
     console.error(`Error copying ${filename}:`, error);
   }
