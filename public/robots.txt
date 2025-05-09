@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tanimajoshi.github.io/biostat-consulting/sitemap.xml 
